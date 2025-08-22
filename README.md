@@ -1,10 +1,10 @@
-# 🚀 **DOCKERIZED JAVA MICROSERVICES DEPLOYMENT WITH KUBERNETES (MINIKUBE & EKS)**
+#  **DOCKERIZED JAVA MICROSERVICES DEPLOYMENT WITH KUBERNETES (MINIKUBE & EKS)**
 
 This project demonstrates how to containerize and deploy a Java-based microservices architecture using **Docker**, **Kubernetes (Minikube & Amazon EKS)**, and **Docker Hub** for image hosting.
 
 ---
 
-## 📦 **MICROSERVICES OVERVIEW**
+##  **MICROSERVICES OVERVIEW**
 
 The application consists of three interdependent microservices:
 - `shopfront` - The frontend application  
@@ -13,7 +13,7 @@ The application consists of three interdependent microservices:
 
 ---
 
-## 📌 **PREREQUISITES**
+##  **PREREQUISITES**
 
 - Java & Maven installed  
 - Docker installed and running  
@@ -24,7 +24,7 @@ The application consists of three interdependent microservices:
 
 ---
 
-## 🔧 **LOCAL DEVELOPMENT SETUP WITH MINIKUBE**
+##  **LOCAL DEVELOPMENT SETUP WITH MINIKUBE**
 
 ### **Step 1: Install `kubectl`**
 ```bash
@@ -50,7 +50,7 @@ Follow the official guide: [https://minikube.sigs.k8s.io/docs/start/](https://mi
 
 ---
 
-## ☁️ **EKS CLUSTER SETUP ON AWS**
+##  **EKS CLUSTER SETUP ON AWS**
 
 ### **Step 1: Launch EC2 Instance**
 - Use **t2.medium** instance  
@@ -123,7 +123,7 @@ eksctl delete cluster --name=eksdemo --region=us-west-1
 
 ---
 
-## 🚀 **APPLICATION DEPLOYMENT (MINIKUBE OR EKS)**
+##  **APPLICATION DEPLOYMENT (MINIKUBE OR EKS)**
 
 ### **Step 1: Build Maven Projects**
 ```bash
@@ -160,7 +160,7 @@ minikube service stockmanager
 
 ---
 
-## ✅ **SERVICE BUILD ORDER**
+##  **SERVICE BUILD ORDER**
 
 Ensure services are built and deployed in the following order:
 1. `shopfront`  
@@ -169,7 +169,7 @@ Ensure services are built and deployed in the following order:
 
 ---
 
-## 🌐 **API ENDPOINTS**
+##  **API ENDPOINTS**
 
 | Service           | Endpoint     |
 |------------------|--------------|
